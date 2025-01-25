@@ -7,6 +7,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
          <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Penguin Fashion</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
     <style>
     .fonts-bebas-neue{
           font-family: "Bebas Neue", serif;
@@ -24,20 +26,21 @@
 
     </style>
 </head>
-<body class="fonts-roboto">
-    <header>
-        <nav>
-            <div>
-                <img src="./icons/logo.png" alt="logo">
+<body class="fonts-roboto max-w-screen-xl mt-0 mx-auto p-0 box-border">
+    <header class="max-w-screen-lg">
+        <nav class="flex justify-between items-center">
+            <div class="w-1/2">
+                <img class="w-full" src="./icons/logo.png" alt="logo">
             </div>
             <div>
-                <div>☰</div>
-                <ul>
-                    <li>Home</li>
-                    <li>Products</li>
-                    <li>About us</li>
-                    <li>Contact us</li>
-                </ul>
+                <div><span class="md:hidden">☰</span>
+                     <ul class="">
+                         <li>Home</li>
+                         <li>Products</li>
+                         <li>About us</li>
+                         <li>Contact us</li>
+                     </ul>
+                </div>
             </div>
         </nav>
     </header>
